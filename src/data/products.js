@@ -1,11 +1,4 @@
-// ============================================================
-// products.js - All mock product data lives here
-// This file exports two things:
-//   1. products     → list of medicines to display
-//   2. suggestions  → smart suggestion map (category → medicine)
-// ============================================================
 
-// Each product has: id, name, category, price, image emoji, description
 export const products = [
   {
     id: 1,
@@ -105,51 +98,47 @@ export const products = [
   },
 ];
 
-// Smart suggestion map:
-// Key   = category of product added to cart
-// Value = id of the product to suggest
-// This is the "Smart Medicine Suggestion" feature
+
 export const suggestions = {
   fever: {
     message: "🌡️ Having fever? Also consider:",
-    suggestedId: 10, // Thermometer
+    suggestedId: 10,
   },
   cough: {
     message: "😷 For cough relief, try:",
-    suggestedId: 4, // Vitamin C
+    suggestedId: 4, 
   },
   pain: {
     message: "💪 Managing pain? You might need:",
-    suggestedId: 8, // Bandage Roll
+    suggestedId: 8, 
   },
   allergy: {
     message: "🌿 For allergy support, consider:",
-    suggestedId: 4, // Vitamin C
+    suggestedId: 4, 
   },
   digestion: {
     message: "🫄 For digestive health, also try:",
-    suggestedId: 5, // Antacid
+    suggestedId: 5, 
   },
   vitamins: {
     message: "⚡ Boosting health? Also add:",
-    suggestedId: 12, // Zinc
+    suggestedId: 12, 
   },
   "first-aid": {
     message: "🩺 For first aid, you may also need:",
-    suggestedId: 9, // Sanitizer
+    suggestedId: 9, 
   },
   hygiene: {
     message: "🧼 Staying clean? Add these too:",
-    suggestedId: 8, // Bandage
+    suggestedId: 8, 
   },
   device: {
     message: "🔍 Monitoring health? Also check:",
-    suggestedId: 1, // Paracetamol
+    suggestedId: 1, 
   },
 };
 
-// Mock user data - auto-filled during checkout
-// In a real app, this would come from a user database
+
 export const mockUser = {
   name: "Rahul Sharma",
   email: "rahul.sharma@email.com",
